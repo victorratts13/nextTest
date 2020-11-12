@@ -14,6 +14,7 @@ class index extends Component {
     componentDidMount(){
         this.socket = io()
         this.socket.on('event', data => {
+            console.log(data)
             this.setState({
                 event: data
             })
